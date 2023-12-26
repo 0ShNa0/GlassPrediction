@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="utf-8">
+    <title>Homepage</title>
+</head>
+ 
+<body>
+    <div  style="background-color:rgb(191, 191, 241);text-align:center;padding: 75px;">
+    <h1 style="color:black">Glass classification predictor</h1>
+   
+    <form action="{% url 'result' %} " style="border:5px solid black;">
+
+        {% csrf_token %}
+   
+   <h3>R1:</h3><input type="text" required name="R1"><br><br>
+   <h3>Na:</h3><input type="text" required name="Na"><br><br>
+   <h3>Mg:</h3><input type="text" required name="Mg"><br><br>
+    <h3>Al:</h3><input type="text" required name="Al"><br><br>
+    <h3>Si:</h3><input type="text" required name="Si"><br><br>
+    <h3>K:</h3><input type="text" required name="K"><br><br>
+    <h3>Ca:</h3> <input type="text" required name="Ca"><br><br>
+    <h3>Ba:</h3><input type="text" required name="Ba"><br><br>
+    <h3>Fe:</h3><input type="text" required name="Fe"><br><br>
+    <input type="submit" name="" value="submit">
+    </form>
+</div>
+</body>
+ 
+</html>
